@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 const mainListItems = [
   { text: "Головна", icon: <HomeRoundedIcon />, path: "/dashboard" },
-  { text: "Користувачі", icon: <PeopleRoundedIcon />, path: "/users" },
+  { text: "Мої користувачі", icon: <PeopleRoundedIcon />, path: "/users" },
 ];
 
 export default function MenuContent() {

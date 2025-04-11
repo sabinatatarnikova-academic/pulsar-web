@@ -16,6 +16,8 @@ import {
 import Grid from "@mui/material/Grid";
 import UserCard from "./components/UserCard";
 import {mockUsers} from "./data/data";
+import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const xThemeComponents = {
   ...chartsCustomizations,
@@ -25,6 +27,7 @@ const xThemeComponents = {
 };
 
 export default function Dashboard(props: { disableCustomTheme?: boolean }) {
+    const is900 = useMediaQuery("(max-width: 900px)");
 
   return (
     <AppTheme {...props} themeComponents={xThemeComponents}>
@@ -51,7 +54,7 @@ export default function Dashboard(props: { disableCustomTheme?: boolean }) {
               mt: { xs: 8, md: 0 },
             }}
           >
-            <Header userName="Користувачі" />
+            <Header userName="Мої користувачі" />
             <Box sx={{ width: "100%", maxWidth: { sm: "100%", md: "1700px" } }}>
               <Grid
                 container
@@ -59,6 +62,9 @@ export default function Dashboard(props: { disableCustomTheme?: boolean }) {
                 columns={12}
                 sx={{ mb: (theme) => theme.spacing(2) }}
               >
+                  {is900 && <Typography component="h2" variant="h6" sx={{ mb: 2, marginBottom: 0 }}>
+                      Мої користувачі
+                  </Typography>}
                 {mockUsers.map((user, index) => (
                     <Grid size={{ xs: 12, md: 6, lg: 4 }} key={index}>
                       <UserCard user={user} />
