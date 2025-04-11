@@ -7,8 +7,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Stack from "@mui/material/Stack";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PeopleRoundedIcon from "@mui/icons-material/PeopleRounded";
-import {useLocation, useNavigate} from "react-router-dom";
-import {useState} from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const mainListItems = [
   { text: "Головна", icon: <HomeRoundedIcon />, path: "/dashboard" },
@@ -17,7 +16,7 @@ const mainListItems = [
 
 export default function MenuContent() {
   const navigate = useNavigate();
-    const location = useLocation();
+  const location = useLocation();
 
   return (
     <Stack sx={{ flexGrow: 1, p: 1, justifyContent: "space-between" }}>
