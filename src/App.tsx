@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Dashboard from './dashboard/Dashboard';
+import { Navigate, Route, Routes } from "react-router";
+import UsersPage from "./dashboard/UsersPage";
+import {dataUser0, dataUser1, dataUser2, dataUser3, dataUser4, dataUser5} from "./dashboard/data/data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+        <Route path={"/dashboard"} element={<Dashboard data={dataUser0}/>}/>
+        <Route path={"/"} element={<Navigate to={"/dashboard"}/>}/>
+        <Route path={"/users"} element={<UsersPage/>}/>
+        <Route path={"/users/1"} element={<Dashboard data={dataUser1}/>}/>
+        <Route path={"/users/2"} element={<Dashboard data={dataUser2}/>}/>
+        <Route path={"/users/3"} element={<Dashboard data={dataUser3}/>}/>
+        <Route path={"/users/4"} element={<Dashboard data={dataUser4}/>}/>
+        <Route path={"/users/5"} element={<Dashboard data={dataUser5}/>}/>
+      </Routes>
   );
 }
 
