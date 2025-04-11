@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, useColorScheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
@@ -31,8 +31,6 @@ const Toolbar = styled(MuiToolbar)({
 
 export default function AppNavbar() {
   const [open, setOpen] = React.useState(false);
-  const { mode } = useColorScheme();
-  const isDark = mode === "dark";
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);

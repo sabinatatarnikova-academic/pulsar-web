@@ -79,7 +79,7 @@ export default function SideMenu() {
       >
         <Avatar
           sizes="small"
-          alt="Оніщенко Кирило"
+          alt="Ім’я користувача"
           src="/static/images/avatar/7.jpg"
           sx={{ width: 36, height: 36 }}
         />
@@ -88,10 +88,10 @@ export default function SideMenu() {
             variant="body2"
             sx={{ fontWeight: 500, lineHeight: "16px" }}
           >
-            Оніщенко Кирило
+              Ім’я користувача
           </Typography>
           <Typography variant="caption" sx={{ color: "text.secondary" }}>
-            k.onishenko@gmail.com
+            user@gmail.com
           </Typography>
         </Box>
         {/*<OptionsMenu />*/}
