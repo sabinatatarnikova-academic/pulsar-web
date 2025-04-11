@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pulsar-web/static/css/main.f855e6bc.css",
+    "main.js": "/pulsar-web/static/js/main.7dde7d8e.js",
+    "static/js/453.20a5b574.chunk.js": "/pulsar-web/static/js/453.20a5b574.chunk.js",
+    "static/media/PulsarLogo.svg": "/pulsar-web/static/media/PulsarLogo.cfd1aaf235a89d55ecd4d364cc007650.svg",
+    "index.html": "/pulsar-web/index.html",
+    "main.f855e6bc.css.map": "/pulsar-web/static/css/main.f855e6bc.css.map",
+    "main.7dde7d8e.js.map": "/pulsar-web/static/js/main.7dde7d8e.js.map",
+    "453.20a5b574.chunk.js.map": "/pulsar-web/static/js/453.20a5b574.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.7dde7d8e.js"
+  ]
+}
